@@ -1,74 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>CorporateWebsitePwa</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon"/>
 
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/whats.css" />
-    <link rel="stylesheet" href="./assets/css/whats2.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./assets/css/normalize.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="./assets/css/whats.css"/>
+    <link rel="stylesheet" href="./assets/css/whats2.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
-    <meta name="theme-color" content="#2091f9" />
+    <meta name="theme-color" content="#2091f9"/>
 
-    <meta name="title" content="Aprende CSS desde cero" />
-    <meta
-      name="description"
-      content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."
-    />
+    <meta name="title" content="Aprende CSS desde cero"/>
+    <meta name="description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."/>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://BenjaminCondori.github.io" />
-    <meta property="og:title" content="Aprende CSS desde cero" />
-    <meta
-      property="og:description"
-      content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."
-    />
-    <meta
-      property="og:image"
-      content="https://BenjaminCondori.github.io/img/css.jpg"
-    />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://BenjaminCondori.github.io"/>
+    <meta property="og:title" content="Aprende CSS desde cero"/>
+    <meta property="og:description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."/>
+    <meta property="og:image" content="https://BenjaminCondori.github.io/img/css.jpg"/>
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://aprendecss.com/" />
-    <meta property="twitter:title" content="Aprende CSS desde cero" />
-    <meta
-      property="twitter:description"
-      content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."
-    />
-    <meta
-      property="twitter:image"
-      content="https://BenjaminCondori.github.io/img/css.jpg"
-    />
-  </head>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://aprendecss.com/"/>
+    <meta property="twitter:title" content="Aprende CSS desde cero"/>
+    <meta property="twitter:description" content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google."/>
+    <meta property="twitter:image" content="https://BenjaminCondori.github.io/img/css.jpg"/>
+    <link rel="manifest" href="manifest.webmanifest">
+  <!-- <meta name="theme-color" content="#1976d2"> -->
+</head>
   <body>
     <app-root></app-root>
 
     <div class="content-chatbot">
-      <df-messenger
-        intent="WELCOME"
-        chat-title="Chat Bot"
-        agent-id="5b384a2d-b649-4515-88a0-f03f918c6196"
-        language-code="es"
-        chat-icon="./assets/img/chatbot-icon.png"
-      ></df-messenger>
+      <df-messenger intent="WELCOME" chat-title="Chat Bot" agent-id="5b384a2d-b649-4515-88a0-f03f918c6196" language-code="es" chat-icon="./assets/img/chatbot-icon.png"></df-messenger>
     </div>
     
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-  </body>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
 </html>
