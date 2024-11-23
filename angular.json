@@ -29,7 +29,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./public/assets/js/menu.js",
+              "./public/assets/js/questions.js",
+              "./public/assets/js/slider.js",
+              "./public/assets/js/script2.js",
+              "./node_modules/sweetalert2/dist/sweetalert2.all.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
