@@ -26,7 +26,7 @@
   height: auto;
   position: fixed;
   z-index: 8;
-  bottom: 0px;
+  bottom: 75px;
   right: 0px;
   padding: 5px;
   margin: 0px;
@@ -84,7 +84,7 @@
   height: auto;
   padding: 10px;
   bottom: 85px;
-  right: 20 px;
+  right: 20px;
   transition: .5s;
   border-radius: 10px;
   background-color: white;
