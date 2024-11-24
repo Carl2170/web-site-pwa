@@ -8,6 +8,8 @@ import { AboutComponent } from "./components/about/about.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { QuestionsComponent } from "./components/questions/questions.component";
 import { WhatsComponent } from "./components/whats/whats.component";
+import { SwPush } from '@angular/service-worker';
+import { UpdateCheckService } from './services/update-check.service';
 // import { RouterOutlet } from '@angular/router';
 
 
@@ -27,6 +29,12 @@ declare function initPopupWhatsApp(): void;
 export class AppComponent {
   title = 'corporate-website-pwa';
   
+  constructor(
+    private updateCheckService: UpdateCheckService,
+    private swPush: SwPush
+  ) {
+    this.updateCheckService.checkForUpdate();
+  }
   
   ngAfterViewInit(): void {
     // Llama a la función JavaScript después de que la vista se haya inicializado
@@ -36,5 +44,13 @@ export class AppComponent {
       initTestimonySlider();
       initPopupWhatsApp();
     }, 50);
+  }
+  
+  subscribeToPush(): void {
+    this.swPush.messages.subscribe(
+      (res: any) => {
+        console.log(res, " Message to show in the notificaiton ");
+      }
+    );
   }
 }

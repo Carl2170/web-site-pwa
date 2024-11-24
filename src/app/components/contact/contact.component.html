@@ -1,83 +1,68 @@
 <section id="contacto" class="contact container">
-  <h2 class="subtitle mt-70">Contacto</h2>
+  <h2 class="subtitle mt-70">Contáctanos</h2>
+  <p class="about-paragraph text-center">
+    En DevXperts estamos listos para ayudarte a transformar tus ideas en
+    realidades digitales. ¡Hablemos!
+  </p>
   <div class="contact-container">
-      <div class="contact-map">
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.6599511460117!2d-63.09264008551489!3d-17.854568881737368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1ec194ffc1641%3A0x558128ec67164958!2sColegio%20Normand%C3%ADa%20Thevenet!5e0!3m2!1ses-419!2sbo!4v1676062013684!5m2!1ses-419!2sbo"
-              width="600"
-              height="350"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-      </div>
-      <div class="contact-form">
-        <form [formGroup]="contactForm"
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1343.2549797519125!2d-63.16617670513321!3d-17.777647883044516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e87a29dc8527%3A0xe63748e994defe05!2sUAGRM!5e0!3m2!1ses-419!2sbo!4v1732409063232!5m2!1ses-419!2sbo"
+        width="600"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="contact-form">
+      <form
+        [formGroup]="contactForm"
         (ngSubmit)="sendContactform()"
-        autocomplete="off">
-          <div class="mb-3">
-              <label
-                  for="name"
-                  class="form-label"
-                  >Nombre:
-              </label>
-              <input
-                  type="text "
-                  class="form-control"
-                  formControlName="name"
-                  placeholder="Escribe tu nombre"
-              />
-              <span
-                *ngIf="isValidField('name')"
-                class="form-text text-danger"
-              >
-                {{ getMessageError("name") }}
-              </span>
-          </div>
-          <div class="mb-3">
-              <label
-                  for="email"
-                  class="form-label"
-                  >Correo electrónico:
-              </label>
-              <input
-                  type="email"
-                  class="form-control"
-                  formControlName="email"
-                  placeholder="name@example.com "
-              />
-              <span
-                *ngIf="isValidField('email')"
-                class="form-text text-danger"
-              >
-                {{ getMessageError("email") }}
-              </span>
-          </div>
-          <div class="mb-3">
-              <label
-                  for="comment"
-                  class="form-label"
-                  >Comentario:
-              </label>
-              <textarea
-                  class="form-control"
-                  formControlName="message"
-                  rows="3"
-              ></textarea>
-              <span
-                *ngIf="isValidField('message')"
-                class="form-text text-danger"
-              >
-                {{ getMessageError("message") }}
-              </span>
-          </div>
-          <div class="mb-3">
-              <button class="btn-send" [disabled]="loading" type="submit">
-                  Enviar
-              </button>
-          </div>
-        </form>
-      </div>
+        autocomplete="off"
+      >
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre: </label>
+          <input
+            type="text "
+            class="form-control"
+            formControlName="name"
+            placeholder="Escribe tu nombre"
+          />
+          <span *ngIf="isValidField('name')" class="form-text text-danger">
+            {{ getMessageError("name") }}
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico: </label>
+          <input
+            type="email"
+            class="form-control"
+            formControlName="email"
+            placeholder="name@example.com "
+          />
+          <span *ngIf="isValidField('email')" class="form-text text-danger">
+            {{ getMessageError("email") }}
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Comentario: </label>
+          <textarea
+            class="form-control"
+            formControlName="message"
+            rows="3"
+          ></textarea>
+          <span *ngIf="isValidField('message')" class="form-text text-danger">
+            {{ getMessageError("message") }}
+          </span>
+        </div>
+        <div class="mb-3">
+          <button class="btn-send" [disabled]="loading" type="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>

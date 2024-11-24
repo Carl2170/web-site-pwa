@@ -75,6 +75,10 @@ body {
     font-weight: 300;
 }
 
+.nav-title strong {
+    font-weight: 700;
+}
+
 .nav-link {
     margin-left: auto;
     padding: 0;

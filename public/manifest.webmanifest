@@ -1,7 +1,7 @@
 {
-  "name": "Sitio Web Corportivo",
+  "name": "Sitio Web Corporativo",
   "short_name": "Website",
-  "theme_color": "#2091f9",
+  "theme_color": "#001A49",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
