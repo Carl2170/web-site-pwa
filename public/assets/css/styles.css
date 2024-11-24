@@ -58,7 +58,7 @@ body {
     height: 80px;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     transition: all 0.3s;
 }
 
