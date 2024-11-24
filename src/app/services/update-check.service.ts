@@ -15,8 +15,7 @@ export class UpdateCheckService {
 
     checkForUpdate() {
         const appIsStable$ = this.appRef.isStable.pipe(first(isStable => isStable === true));
-        // const everyTwoMinutes$ = interval(2 * 60 * 1000); // 2 minutes
-        const everyTwoMinutes$ = interval(30 * 1000); // 30 seconds
+        const everyTwoMinutes$ = interval(2 * 60 * 1000); // 2 minute
         const everyTwoMinutesOnceAppIsStable$ = concat(appIsStable$, everyTwoMinutes$);
         everyTwoMinutesOnceAppIsStable$.subscribe(async () => {
             try {
