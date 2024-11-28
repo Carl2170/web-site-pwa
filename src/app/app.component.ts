@@ -10,6 +10,7 @@ import { QuestionsComponent } from "./components/questions/questions.component";
 import { WhatsComponent } from "./components/whats/whats.component";
 import { SwPush } from '@angular/service-worker';
 import { UpdateCheckService } from './services/update-check.service';
+import { TeamComponent } from "./components/team/team.component";
 // import { RouterOutlet } from '@angular/router';
 
 
@@ -24,7 +25,7 @@ declare function initPopupWhatsApp(): void;
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [FooterComponent, HeaderComponent, ServicesComponent, KnowledgeComponent, PriceComponent, AboutComponent, ContactComponent, QuestionsComponent, WhatsComponent]
+  imports: [FooterComponent, HeaderComponent, ServicesComponent, KnowledgeComponent, PriceComponent, AboutComponent, ContactComponent, QuestionsComponent, WhatsComponent, TeamComponent]
 })
 export class AppComponent {
   title = 'corporate-website-pwa';
