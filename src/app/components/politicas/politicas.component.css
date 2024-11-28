@@ -1,0 +1,50 @@
+.terms-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.terms-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.terms-heading {
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+}
+
+.terms-container p {
+  color: #444;
+  margin: 10px 0;
+}
+
+.terms-container ul {
+  margin: 10px 20px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.terms-container li {
+  margin: 5px 0;
+  color: #333;
+}
+
+.terms-container a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
