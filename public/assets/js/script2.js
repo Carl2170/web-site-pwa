@@ -21,7 +21,7 @@ function initPopupWhatsApp() {
 
     if (msg.trim() !== "") {
       // Verificar que no esté vacío
-      window.open("https://wa.me/59176075113?text=" + relmsg, "_blank");
+      window.open("https://wa.me/59173776340?text=" + relmsg, "_blank");
       inputField.value = ""; // Limpiar el campo de entrada
       
       // Mostrar un toast de éxito
