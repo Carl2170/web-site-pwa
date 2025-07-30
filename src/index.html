@@ -1,50 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>DevXperts - Website</title>
-    <base href="/"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon"/>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="./assets/css/normalize.css"/>
-    <link rel="stylesheet" href="./assets/css/styles.css"/>
-    <link rel="stylesheet" href="./assets/css/whats.css"/>
-    <link rel="stylesheet" href="./assets/css/whats2.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/whats.css" />
+    <link rel="stylesheet" href="./assets/css/whats2.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-    <meta name="theme-color" content="#1d293f"/>
+    <meta name="theme-color" content="#1d293f" />
 
-    <meta name="title" content="DevXperts - Soluciones Tecnológicas Innovadoras" />
-    <meta name="description" content="En DevXperts transformamos tus ideas en realidades digitales. Ofrecemos desarrollo Full Stack, inteligencia artificial y soporte técnico de primer nivel." />
-    <meta name="keywords" content="desarrollo web, inteligencia artificial, soluciones tecnológicas, diseño web, soporte técnico, desarrollo Full Stack" />
+    <meta
+      name="title"
+      content="DevXperts - Soluciones Tecnológicas Innovadoras"
+    />
+    <meta
+      name="description"
+      content="En DevXperts transformamos tus ideas en realidades digitales. Ofrecemos desarrollo Full Stack, inteligencia artificial y soporte técnico de primer nivel."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo web, inteligencia artificial, soluciones tecnológicas, diseño web, soporte técnico, desarrollo Full Stack"
+    />
     <meta name="author" content="DevXperts" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dev-xperts.onrender.com/" />
-    <meta property="og:title" content="DevXperts - Soluciones Tecnológicas Innovadoras" />
-    <meta property="og:description" content="Transformamos tus ideas en realidades digitales. Especialistas en desarrollo Full Stack, inteligencia artificial y soporte técnico." />
-    <meta property="og:image" content="https://dev-xperts.onrender.com/assets/img/desarrollo-web3.png" />
+    <meta
+      property="og:title"
+      content="DevXperts - Soluciones Tecnológicas Innovadoras"
+    />
+    <meta
+      property="og:description"
+      content="Transformamos tus ideas en realidades digitales. Especialistas en desarrollo Full Stack, inteligencia artificial y soporte técnico."
+    />
+    <meta
+      property="og:image"
+      content="https://dev-xperts.onrender.com/assets/img/desarrollo-web3.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://dev-xperts.onrender.com" />
-    <meta property="twitter:title" content="DevXperts - Soluciones Tecnológicas Innovadoras" />
-    <meta property="twitter:description" content="Descubre soluciones personalizadas para tu negocio con desarrollo web, IA y soporte técnico de excelencia." />
-    <meta property="twitter:image" content="https://dev-xperts.onrender.com/assets/img/desarrollo-web3.png" />
+    <meta
+      property="twitter:title"
+      content="DevXperts - Soluciones Tecnológicas Innovadoras"
+    />
+    <meta
+      property="twitter:description"
+      content="Descubre soluciones personalizadas para tu negocio con desarrollo web, IA y soporte técnico de excelencia."
+    />
+    <meta
+      property="twitter:image"
+      content="https://dev-xperts.onrender.com/assets/img/desarrollo-web3.png"
+    />
 
-    <link rel="manifest" href="manifest.webmanifest">
-</head>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #878fac;
+        --df-messenger-button-titlebar-color: #df9b56;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #878fac;
+        --df-messenger-user-message: #479b3d;
+      }
+    </style>
+  </head>
   <body>
     <app-root></app-root>
 
     <div class="content-chatbot">
       <df-messenger intent="WELCOME" chat-title="Chat Bot" agent-id="5b384a2d-b649-4515-88a0-f03f918c6196" language-code="es" chat-icon="./assets/img/chatbot-icon.png"></df-messenger>
+
+      <!-- <df-messenger
+        intent="WELCOME"
+        chat-title="DialogflowMessenger"
+        agent-id="efae00e1-b71e-4070-962f-a41f7c7dd0fc"
+        language-code="es"
+        chat-icon="./assets/img/chatbot-icon.png">
+      </df-messenger> -->
     </div>
-    
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <noscript>Please enable JavaScript to continue using this application.</noscript>
-</body>
+    <noscript
+      >Please enable JavaScript to continue using this application.</noscript
+    >
+  </body>
 </html>
